@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fremra.ai – kommer snart</title>
+  <meta name="description" content="fremra.ai er under arbeid. Inntil videre finner du Fremra på fremra.no.">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/ovo-400.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face { font-family: Ovo; src: url(assets/fonts/ovo-400.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+    @font-face { font-family: Inter; src: url(assets/fonts/inter-300.woff2) format("woff2"); font-weight: 300; font-display: swap; }
+    @font-face { font-family: Inter; src: url(assets/fonts/inter-600.woff2) format("woff2"); font-weight: 600; font-display: swap; }
+
+    :root { --primary: #eb4f34; --secondary: #7a2962; --text: #333333; --muted: #8b8b8b; --bg: #fafafa; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex; flex-direction: column;
+      font: 300 1.125rem/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--text); background: var(--bg);
+    }
+    main {
+      flex: 1; display: flex; flex-direction: column; justify-content: center;
+      width: 100%; max-width: 860px; margin: 0 auto; padding: 3rem 1.5rem;
+    }
+    .logo { width: 180px; height: auto; margin-bottom: 3rem; }
+    h1 {
+      font: 400 clamp(2.5rem, 7vw, 4.5rem)/1.1 Ovo, Georgia, serif;
+      margin: 0 0 1.5rem; color: #000;
+    }
+    h1 span { color: var(--primary); }
+    p { max-width: 36rem; margin: 0 0 2.5rem; }
+    .button {
+      align-self: flex-start; display: inline-block; padding: .9rem 1.6rem;
+      font-weight: 600; color: #fff; background: var(--primary); text-decoration: none; border-radius: 2px;
+    }
+    .button:hover, .button:focus-visible { background: var(--secondary); }
+    footer {
+      width: 100%; max-width: 860px; margin: 0 auto; padding: 1.5rem;
+      font-size: .875rem; color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="assets/logo.svg" alt="Fremra" width="180" height="62">
+    <h1>Noe nytt er<br>på vei<span>.</span></h1>
+    <p>Vi jobber med fremra.ai. Inntil videre finner du oss på fremra.no.</p>
+    <a class="button" href="https://fremra.no/">Gå til fremra.no</a>
+  </main>
+  <footer>Fremra AS · Dronning Eufemias gate 16, 0191 Oslo</footer>
+</body>
+</html>
